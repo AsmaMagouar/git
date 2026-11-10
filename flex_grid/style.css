@@ -1,0 +1,35 @@
+div{display: flex;
+background-color: rgb(163, 78, 78);
+justify-content: space-between;
+align-items: center;
+height:100px;
+padding: 12px;
+}
+body{
+    margin: opx;
+    padding: 0%;
+}
+
+ul{display: flex;
+list-style: none;
+gap: 10px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width:600px ){
+    header{
+        flex-direction:column-reverse;
+        
+    }
+     ul a{
+        flex-direction:column-reverse;
+    font-family: monospace;
+color: blue;
+font-size: large;}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+}

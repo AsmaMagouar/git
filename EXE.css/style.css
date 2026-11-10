@@ -1,0 +1,24 @@
+#center{
+    text-align: center;
+    font-size: 7;
+    color: rgb(53, 180, 53);
+}
+nav{text-align: center;
+    background-color: rgb(148, 196, 148);
+}
+a{
+    color: antiquewhite;
+}
+#cene{color: black;
+  text-align: center;  
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#no{
+    color: rgb(255, 127, 178);}
+p{
+    font-style: italic;
+}
+footer{background-color: darkgrey;}
+header{
+    background-color: rgb(114, 39, 39);
+}

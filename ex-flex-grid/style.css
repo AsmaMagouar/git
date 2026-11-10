@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.product {
+    background: white;
+    border: 2px solid #1e3a8a;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+
+    /* TODO 1: Make .product a flex container */
+    display: flex;
+
+    /* TODO 2: Photo left, price/button right */
+    justify-content: space-between;
+
+    /* TODO 3: Center the three blocks vertically */
+    align-items: center;
+}
+
+.thumb {
+    width: 90px;
+    height: 90px;
+    background: #cbd5e1;
+    border-radius: 8px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.info {
+    width: 45%;
+}
+
+.info h3 {
+    color: #1e3a8a;
+    margin-bottom: 4px;
+}
+
+.buy {
+    text-align: right;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f59e0b;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* TODO 4: Responsive design for phones */
+
+@media (max-width: 600px){ .product{
+
+   
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .thumb {
+        margin-bottom: 12px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .buy {
+        text-align: center;
+        margin-top: 12px;
+    }
+    }

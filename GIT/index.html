@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Beauty<span>&Style</span></a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#cosmetics">Cosmetics</a></li>
+                <li><a href="#fashion">Fashion</a></li>
+                <li><a href="#offers">Offers</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Cosmetics & Fashion Trends</h1>
+            <p>Discover our exclusive collection crafted for your style and beauty with fast delivery and great deals.</p>
+            <a href="#products" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories" id="products">
+        <h2 class="section-title">Featured Collections</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cosmetics">Cosmetics</button>
+            <button class="filter-btn" data-filter="fashion">Fashion</button>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="cosmetics">
+            <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500" alt="Matte Lipstick">
+                <span class="tag">Beauty</span>
+            </div>
+            <div class="product-info">
+                <h3>Matte Lipstick</h3>
+                <p class="price">$15.00</p>
+                <button class="add-to-cart-btn" data-id="1" data-name="Matte Lipstick" data-price="15">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="fashion">
+            <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500" alt="Summer Dress">
+                <span class="tag">Fashion</span>
+            </div>
+            <div class="product-info">
+                <h3>Summer Dress</h3>
+                <p class="price">$35.00</p>
+                <button class="add-to-cart-btn" data-id="2" data-name="Summer Dress" data-price="35">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="cosmetics">
+            <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500" alt="Hydrating Serum">
+                <span class="tag">Beauty</span>
+            </div>
+            <div class="product-info">
+                <h3>Hydrating Facial Serum</h3>
+                <p class="price">$22.00</p>
+                <button class="add-to-cart-btn" data-id="3" data-name="Hydrating Serum" data-price="22">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="fashion">
+            <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500" alt="Silk Shirt">
+                <span class="tag">Fashion</span>
+            </div>
+            <div class="product-info">
+                <h3>Classic White Shirt</h3>
+                <p class="price">$28.00</p>
+                <button class="add-to-cart-btn" data-id="4" data-name="Classic White Shirt" data-price="28">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Bag</h3>
+                <span class="close-cart" id="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <p class="empty-msg">Your cart is currently empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

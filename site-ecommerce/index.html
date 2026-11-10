@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maison Éclat – Maquillage & Soins de la peau</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">Livraison gratuite dès 300 MAD · Paiement à la livraison partout au Maroc</div>
+<header><div class="wrap nav">
+<div class="logo">Maison Éclat</div>
+<div class="links"><a href="#cats">Catégories</a><a href="#shop">Boutique</a><a href="#why">Nos engagements</a>
+<button class="cartbtn" style="margin-left:20px" onclick="toggle()">Panier (<span id="count">0</span>)</button></div>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<div><h1>Révélez votre éclat naturel</h1>
+<p>Maquillage, soins du visage et du corps : une sélection de produits professionnels, choisis pour votre peau.</p>
+<a class="btn" href="#shop">Découvrir la boutique</a></div>
+<div class="art" aria-hidden="true">💄</div>
+</div></div>
+
+<section id="cats"><div class="wrap">
+<h2>Nos catégories</h2><p class="sub">Tout ce qu’il faut pour votre routine beauté.</p>
+<div class="cats" id="catlist"></div>
+</div></section>
+
+<section id="shop" style="padding-top:0"><div class="wrap">
+<h2 id="shoptitle">Tous nos produits</h2><p class="sub">Prix en dirhams (MAD), TVA incluse.</p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="why" style="padding-top:0"><div class="wrap"><div class="perks">
+<div><b>✔ Produits authentiques</b><small>Marques et formules contrôlées.</small></div>
+<div><b>🚚 Livraison 24–72h</b><small>Casablanca, Rabat, Marrakech et toutes les villes.</small></div>
+<div><b>💵 Paiement à la livraison</b><small>Vous payez à la réception.</small></div>
+<div><b>↩ Retour sous 7 jours</b><small>Satisfait ou remboursé.</small></div>
+</div></div></section>
+
+<footer><div class="wrap">© 2026 Maison Éclat · Casablanca, Maroc · contact@maison-eclat.ma</div></footer>
+
+<aside id="drawer" aria-label="Panier">
+<div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:22px;margin:0">Mon panier</h2><button class="cartbtn" onclick="toggle()">Fermer</button></div>
+<div id="items"></div>
+<div class="ship" id="ship"></div>
+<div class="tot"><span>Total</span><span id="total">0 MAD</span></div>
+<button class="btn" onclick="alert('Merci ! Cette démo n’enregistre pas encore de vraies commandes.')">Commander</button>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

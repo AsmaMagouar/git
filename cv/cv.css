@@ -1,0 +1,42 @@
+.avatar{
+    display: block;
+    margin: 0 auto;
+width: 80px;
+height: 80;
+border-radius: 80%;
+object-fit: cover;
+}
+#name{
+    text-align: center;
+    color: rgb(232, 83, 175);
+}
+.job{
+    text-align: center;
+}
+.header{
+    border-bottom: 2px solid  rgb(243, 230, 165); 
+    padding-bottom: 18px;
+    margin-bottom: 2px;
+}
+.link{
+    background-color: rgb(245, 242, 242);
+    color: rgb(37, 50, 238);
+}
+h2{color: rgb(174, 57, 137);
+    border-bottom:1,5px solid color rgb(101, 63, 63)  ;
+    padding-bottom: 18 px;
+    margin-bottom:2 px ;
+}
+.section{
+        border-bottom: 1px solid  rgb(44, 42, 37); 
+    padding-bottom: 18px;
+    margin-bottom: 2%;}
+    .li{
+        background-color: aqua ;
+        margin: 2%;
+        padding: 1px;
+        display: inline;
+        border-radius: 12px;
+        
+    }
+
